@@ -9,7 +9,6 @@ I used this method to do data augmentation two years ago, I trained a few AM mod
 - If you want to simulate almost all range of ages and genders, the method is userful
 - If you want to enrich prosody related performances, the method is not your expected. 
 
-The method is not train a well-trained large-size AM+Vocoder model, then generate lots of synthsized data. 
 
 # Details
   
