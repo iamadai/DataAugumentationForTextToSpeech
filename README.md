@@ -41,9 +41,11 @@ You can use the above method to covert into any samplerate and save into 24KHz, 
 
 4. Train AM/Vocoder model. 
 
-  -For single speaker AM models, you should update single speaker model into multi speaker model, then use the augumented data train a 10 speakers model,
-  -For multi speaker AM models, the speaker count is 10 times larger. 
-  -For Vocoder, you can merge all data together to train a Universal Vocoder. 
+  -For single speaker AM models, you should update single speaker model into multi speaker model, then use the augumented data train a 10 speakers model
+  
+  -For multi speaker AM models, the speaker count is 10 times larger 
+  
+  -For Vocoder, you can merge all data together to train a Universal Vocoder 
 
 
 # Others
