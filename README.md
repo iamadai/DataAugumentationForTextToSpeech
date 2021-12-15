@@ -12,15 +12,15 @@ I used this method to do data augmentation two years ago, I trained a few AM mod
 
 # Details
   
-If we have 48KHz recording wav files, and want to train a 24KHz AM and Vocoder models, the general solution is using tools (for example, sox) to convert the wav files from 48KHz to 24KHz, then extacting features -- in recently lastest models, the mel-spectrum features is most used.  And then train the AM and Vocoder model.
+If we have 48KHz recording wav files, and want to train 24KHz AM and Vocoder models, general solution is using tools (for example, sox) to convert the wav files from 48KHz to 24KHz, then extacting features -- in recently lastest models, the mel-spectrum feature is mostwide used.  And then train the AM and Vocoder model.
 
-For Multi Speakers and Multi Languages, always follow the above ways.  no matter how Neural Architecture the AM or Vocoder use. 
+For Multi Speakers and Multi Languages, always follow the above ways too.  no matter how neural architecture the AM or Vocoder use. 
 
-But how to create N time size data compare with the original 1 copy data.  this is the purpose or focus of this essay. And I hope this solution can become into all your need method for TTS. 
+But how to create N time size data compare with the original 1 copy data.  this is the purpose/focus of this essay. And I hope this solution can become into "all your need method" for TTS. 
 
 The solution is very simple and directly.  Suppose the original data is 48KHz.
 
-1. Using Sox to convert 48KHz into 24KHz, this is normal copy of 24KHz data, I name this copy speaker_24KHz.
+1. Using sox to convert 48KHz into 24KHz, this is normal copy of 24KHz data, I name this copy speaker_24KHz.
 
 2. 1 second 48KHz have 48000 sample value, if I save these 48000 sample value with samplerate 24KHz, then I have 2 second 24KHz audio content, I name this copy virtual_speaker_48KHz.
 for example, load 48KHz with following code. 
