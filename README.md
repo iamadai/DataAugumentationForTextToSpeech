@@ -6,7 +6,7 @@ I used this method to do data augmentation two years ago, I trained a few AM mod
 - If you AM/Vocoder model contain duration features, the method is useful
 - If you AM/Vocoder model have fundmental frequency features, the method is useful
 - If you Vocoder model is a Universal Vocoder, the method is useful
-- If you want to simulate almost all range of ages and genders, the method is userful
+- If you want to simulate almost all range of ages and genders, the method is userful, train a source model, then refine with target speaker data, maybe  very very useful for one-shot TTS 
 - If you want to enrich prosody related performances, the method is not your expected. 
 
 
