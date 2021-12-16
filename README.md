@@ -54,4 +54,4 @@ You can use the above method to covert into any samplerate and save into 24KHz, 
 2. For production, if your product is 24Khz AM + Vocoder,  you can just use virutal_speaker_48KHz data to refine on 24KHz AM/Vocoder model, then update the model only,  this is the cheapest solution to support 48KHz. 
 
 
-Have fun. 
+Have fun (旅途愉快). 
