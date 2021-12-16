@@ -39,19 +39,19 @@ then save to 24KHz with
 
 You can use the above method to covert into any samplerate and save into 24KHz,  here I got 10 times data than original data. 
 
-4. Train AM/Vocoder model. 
+4. Extract features on all these 10 times data. 
+5. Train AM/Vocoder model. 
 
-  -For single speaker AM models, you should update single speaker model into multi speaker model, then use the augumented data train a 10 speakers model
-  
-  -For multi speaker AM models, the speaker count is 10 times larger 
-  
-  -For Vocoder, you can merge all data together to train a Universal Vocoder 
+    -For single speaker AM models, you should update single speaker model into multi speaker model, then use the augumented data train a 10 speakers model  
+    -For multi speaker AM models, the speaker count is 10 times larger  
+    -For Vocoder, you can merge all data together to train a Universal Vocoder 
 
 
 # Others
 
 1. Train a 48KHz Vocoder model may be a challenge work, but train a 24KHz Vocoder is easier. 
 2. For production, if your product is 24Khz AM + Vocoder,  you can just use virutal_speaker_48KHz data to refine on 24KHz AM/Vocoder model, then update the model only,  this is the cheapest solution to support 48KHz. 
+3. Easy create new speakers. 
 
 
 Have fun (旅途愉快). 
